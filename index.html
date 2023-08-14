@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Millennium Falcon</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a class="text-decoration" href="">
+          <div class="logo-contents">
+            <img
+              src="img/logo.png"
+              alt="Millennium Falcon logo"
+              class="nav-logo"
+              id="logo"
+            />
+            <h2 class="logo-text">The Millennium Falcon</h2>
+          </div>
+        </a>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Operations</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Buy now</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="header__title">
+        <h1>
+          Do not <span class="highlight">Kiss Ass</span>, buy the Millennium
+          Falcon and <span class="highlight">Kick Ass</span>
+        </h1>
+        <h4>A simpler controlling experience for a simpler life.</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img src="img/hero.jpg" class="header__img" alt="hero img" />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <!-- This section section includes 2 DIVs -->
+
+      <!-- DIV 1 -->
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">
+          Everything you need in a modern ship and more.
+        </h3>
+      </div>
+
+      <!-- DIV 2 -->
+      <div class="features">
+        <!-- This DIV includes 3 IMGs and 3 DIVs -->
+
+        <!-- IMG 1 features -->
+        <img
+          src="img/fighting-lazy.png"
+          data-src="img/fighting.png"
+          class="features__img lazy-img"
+          alt="fighting"
+        />
+
+        <!-- DIV 1 features -->
+        <div class="features__feature">
+          <!-- this DIV includes Icon, H5, and P -->
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">A fateful trip</h5>
+          <p>Only the Falcon can win the Silencer!</p>
+        </div>
+
+        <!-- Dfeatures__imgIV 2 features -->
+        <div class="features__feature">
+          <!-- this DIV includes Icon, H5, and P -->
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">It jumps!</h5>
+          <p>
+            You can always avoid being captured by aany Star Destroyer by making
+            the jump to lightspeed.
+          </p>
+        </div>
+
+        <!-- IMG 2 features -->
+        <img
+          src="img/escaping-lazy.png"
+          data-src="img/escaping.png"
+          class="features__img lazy-img"
+          alt="escaping"
+        />
+
+        <!-- IMG 3 features -->
+        <img
+          src="img/landing-lazy.png"
+          data-src="img/landing.png"
+          class="features__img lazy-img"
+          alt="landing"
+        />
+        <!-- DIV 3 features -->
+        <div class="features__feature">
+          <!-- this DIV includes Icon, H5, and P -->
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Cutting edge landing claws.</h5>
+          <p>
+            In case of emergency landing or crash on water, the Falcon was also
+            equipped with flotation pontoons.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <!-- This section section includes 2 DIVs -->
+
+      <!-- DIV 1 -->
+      <div class="section__title">
+        <h2 class="section__description">Operations</h2>
+        <h3 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h3>
+      </div>
+
+      <!-- DIV 2 -->
+      <div class="operations">
+        <!-- This DIV includes 4 DIVs: 1 for the BTNs, 3 for content -->
+
+        <!-- Div 1 operations btn -->
+        <div class="operations__tab-container">
+          <!-- btn 1 -->
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Engines
+          </button>
+
+          <!-- btn 2 -->
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Armament, hull, and shields
+          </button>
+
+          <!-- btn 3 -->
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Other systems and equipment
+          </button>
+        </div>
+
+        <!-- Div 2 operations content -->
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Girodyne SRB42 sublight engines.</h5>
+          <p>
+            In addition to its renowned hyperdrive, which supposedly makes the
+            Falcon the "fastest ship in the galaxy", the ship is equipped with a
+            backup hyperdrive. A component of the engines was the engine
+            coupling which caused the Falcon to malfunction when misaligned.
+          </p>
+        </div>
+
+        <!-- Div 3 operations content -->
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Two ST2 launchers!!</h5>
+          <p>
+            The weaponry of the Millennium Falcon was normally suited for a much
+            larger warship. It included two CEC AG-2G quad laser cannons (one
+            ventral and one dorsal) with enhanced laser actuators and gas feeds,
+            which gave them maximum range and damage.
+          </p>
+        </div>
+
+        <!-- Div 4 operations content -->
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            The Falcon's main source of power was a Quadex power core.
+          </h5>
+          <p>
+            Its main computer was made of three droid brains which identified
+            themselves as the Millennium Collective. The first droid brain was a
+            transport droid known as V5-T, the second from a slicer droid called
+            ED-4, and the third from L3-37, which began as an R3-series
+            astromech droid brain, but was overlaid with data architecture from
+            an espionage droid, protocol droid processors, and custom
+            state-of-the-art coding.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <!-- This section section includes 2 DIVs -->
+
+      <!-- DIV 1  -->
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Not sure yet?</h2>
+        <h3 class="section__header">She'll make point five past lightspeed.</h3>
+      </div>
+
+      <!-- DIV 2 -->
+      <div class="slider">
+        <!-- this DIV includes 3 DIVs slides, 2 buttons, and 1 DIV dots -->
+
+        <!-- DIV 1 slide -->
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">A Star destroyer</h5>
+            <blockquote class="testimonial__text">
+              The first Death Star was 120 kilometers in diameter, while the
+              second Death Star was 160 kilometers in diameter. Still, the
+              Falcon destoyed them both! 😢
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/profile1.png" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Anakin Skywalker</h6>
+              <p class="testimonial__location">Tatooine</p>
+            </address>
+          </div>
+        </div>
+
+        <!-- DIV 2 slide -->
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">She's a Rebel</h5>
+            <blockquote class="testimonial__text">
+              It's the ship that made the Kessel Run in less than twelve
+              parsecs. I've outrun Imperial starships. Not the local bulk
+              cruisers, mind you, I'm talking about the big Corellian ships now.
+              She's fast enough for you, old man.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/profile2.png" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Han Solo</h6>
+              <p class="testimonial__location">Corellia</p>
+            </address>
+          </div>
+        </div>
+
+        <!-- DIV 3 slide -->
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              That's What She Said (to Han Solo)
+            </h5>
+            <blockquote class="testimonial__text">
+              You came in that thing? You're braver than I thought.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/profile3.png" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Leia Skywalker</h6>
+              <p class="testimonial__location">Alderaan</p>
+            </address>
+          </div>
+        </div>
+
+        <!-- Btn 1 -->
+        <button class="slider__btn slider__btn--left">&larr;</button>
+
+        <!-- Btn 2 -->
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+
+        <!-- DIV dots -->
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">The fastest hunk of junk in the galaxy!</h3>
+      </div>
+      <button class="btn btn--show-modal">Try today!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy;
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://starwars.fandom.com/wiki/Millennium_Falcon"
+          >Fandom wiki
+        </a>
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Trust me, <span class="highlight">I'm fast</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
