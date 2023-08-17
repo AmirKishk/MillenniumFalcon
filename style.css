@@ -23,6 +23,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-snap-type: y proximity;
 }
 
 body {
@@ -39,6 +40,8 @@ body {
   border-top: 1px solid #ddd;
 
   transition: transform 1s, opacity 1s;
+
+  scroll-snap-align: start;
 }
 
 .section--hidden {
